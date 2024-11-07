@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "lora-regular", serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: black;
+    --second-bg-color: grey;
+    --text-color: #ededed;
+    --main-color: #red;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg-color);
+    background-image: url(image/cat-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 730px;
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 15px 35px;
+    background: transparent 0.5;
+    border: 2px solid white;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.wrapper h1 {
+    display: flex;
+    justify-self: center;
+    color: white;
+}
+
+form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid white;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: var(--text-color);
+}
+
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn{
+    display: inline-block;
+    background: transparent;
+    border: 1px solid white;
+    color: var(--text-color);
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+}
